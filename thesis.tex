@@ -89,6 +89,8 @@
 \hypertarget{ux306fux3058ux3081ux306b}{%
 \chapter{はじめに}\label{ux306fux3058ux3081ux306b}}
 
+\label{chap:intro}
+
 この文書は，京都大学電気電子工学科の修論 \(\cdot\) 卒論作成用 \LaTeX
 クラスファイルの利用方法についての説明書です．
 
@@ -121,8 +123,8 @@ adfa (晴彦 and 裕介 2017, pp)
   \end{center}
 \end{table}
 
-このクラスファイルを使用するため，\{\ttfamily kuee.cls\} と \{\ttfamily
-kueethesis.bst\} を，環境変数 \{\ttfamily TEXINPUTS\} で指定されたディレ
+このクラスファイルを使用するため， kuee.cls と kueethesis.bst
+を，環境変数 TEXINPUTS で指定されたディレ
 クトリ，または修論\(\cdot\)卒論の原稿と同じディレクトリにコピーして下さい．
 
 配布キットの文字コードは Unicode になっています．利用環境に応じて，適
@@ -132,8 +134,8 @@ kueethesis.bst\} を，環境変数 \{\ttfamily TEXINPUTS\} で指定された�
 \section{ドキュメントスタイル}\label{ux30c9ux30adux30e5ux30e1ux30f3ux30c8ux30b9ux30bfux30a4ux30eb}}
 
 ドキュメントスタイルは，オプションとして指定します．修論の場合は
-\{\ttfamily shuuron\}，卒論の場合は \{\ttfamily sotsuron\}
-を用います．例 えば，卒論の場合は次のように指定して下さい．
+shuuron，卒論の場合は sotsuron
+を用います．例えば，卒論の場合は次のように指定して下さい．
 
 \begin{quote}
   \begin{verbatim}
@@ -365,10 +367,10 @@ kueethesis.bst\} を，環境変数 \{\ttfamily TEXINPUTS\} で指定された�
 ることを願っています．
 
 \begin{acknowledgements}
-  オリジナルの \LaTeX{}209 用スタイルファイル {\ttfamily
-  kueethesis.sty} の配布キットを作成された，傳康晴さんに感謝します．
+  オリジナルの \LaTeX{}209 用スタイルファイル kueethesis.sty の配布キットを作成された，傳康晴さんに感謝します．
 
-  図表を論文の末尾に移動する方法について, {\ttfamily endfloat.sty} を
+
+  図表を論文の末尾に移動する方法について, endfloat.sty を
   参考にさせて頂きました．筆者の James Darrell McCauley さんに感謝しま
   す．また，改造方法について \TeX{} FAQ 掲示板でアドバイスをくださった
   misc さんに感謝します．
@@ -386,17 +388,15 @@ kueethesis.bst\} を，環境変数 \{\ttfamily TEXINPUTS\} で指定された�
 \begin{description}
   \item[1991年] 傳康晴\footnote{工学研究科\ 電子工学専攻 長尾研(当時)．
           現在，千葉大学．}が，\LaTeX{}209 用修論$\cdot$卒論スタイ
-        ルファイル {\ttfamily kueethesis.sty} と文献用スタイルファ
-        イル {\ttfamily kueethesis.bst} を作成\cite{OldTebiki}．
+        ルファイル kueethesis.sty と文献用スタイルファ
+        イル kueethesis.bst を作成\cite{OldTebiki}．
   \item[2001年] 土屋雅稔\footnote{情報学研究科 知能情報学専攻 言語メディ
-        ア研(当時)．現在，豊橋技術科学大学．{\ttfamily
-        tsuchiya@tut.jp}}が，\LaTeX2e{} 用修論$\cdot$卒論クラスファ
-        イル{\ttfamily kuee.cls} を作成\cite{Tebiki2004}．
+        ア研(当時)．現在，豊橋技術科学大学．tsuchiya@tut.jp}が，\LaTeX2e{} 用修論$\cdot$卒論クラスファ
+        イル kuee.cls を作成\cite{Tebiki2004}．
         \newcounter{tsuaffil}
         \setcounter{tsuaffil}{\value{footnote}}
   \item[2017年] 土谷亮\footnote{情報学研究科 通信情報システム専攻 小野
-        寺研．現在，滋賀県立大学．{\ttfamily
-        tsuchiya.a@e.usp.ac.jp}}が，参考文献の形式を改良．
+        寺研．現在，滋賀県立大学．tsuchiya.a@e.usp.ac.jp} が，参考文献の形式を改良．
   \item[2018年] 土屋雅稔\footnotemark[\value{tsuaffil}]{}が，英文要旨
         に対応するためのコマンドを追加．
 \end{description}
