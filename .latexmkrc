@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-$latex                         = 'platex %O -kanji=utf8 -synctex=1 -interaction=nonstopmode %S';
+$latex                         = 'uplatex %O -kanji=utf8 -synctex=1 -interaction=nonstopmode %S';
 $pdflatex                      = 'pdflatex %O -synctex=1 -interaction=nonstopmode %S';
 $lualatex                      = 'lualatex %O -synctex=1 -interaction=nonstopmode %S';
 $xelatex                       = 'xelatex %O -no-pdf -synctex=1 -shell-escape -interaction=nonstopmode %S';

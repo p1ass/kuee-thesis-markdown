@@ -14,9 +14,9 @@
 \newif\if@sotsuron
 \DeclareOption{sotsuron}{\@sotsurontrue}
 \DeclareOption{shuuron}{\@sotsuronfalse}
-\DeclareOption*{\PassOptionsToClass{\CurrentOption}{jreport}}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{ujreport}}
 \ProcessOptions\relax
-\LoadClass[12pt]{jreport}
+\LoadClass[12pt]{ujreport}
 
 \if@sotsuron
   \gdef\@maintitle{学\hfil 士\hfil 論\hfil 文}
