@@ -29,7 +29,7 @@ scripts/w-topdf.sh thesis.md
 ## 注意
 
 VS CodeやGitHubのプレビューでは日本語が表示されません。
-これは大学公式で配られている `sample.pdf` も同様の現象が発生するので、現在は仕様としています。
+これは大学公式で配られている `sample.pdf` でも同様の現象が発生するので、現在は仕様としています。
 
 ## Licence
 
