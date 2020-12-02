@@ -13,6 +13,8 @@ function on_exit() {
 ## ハンドラー関数を登録する
 trap 'on_exit $?' EXIT
 
+kanji-config-updmap-sys ipa
+
 pandoc -s -N ${filename_without_ext}.md -o ${filename_without_ext}.tex --pdf-engine=latexmk --pdf-engine-opt="-pdfdvi" \
 -F pandoc-crossref -F pandoc-citeproc -M "crossrefYaml=/config/crossref_config.yaml" \
 --listings --template=template.tex --top-level-division=chapter --toc && 
