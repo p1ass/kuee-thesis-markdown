@@ -34,9 +34,6 @@ scripts/generate-diff.sh thesis.tex を実行することで、diffが視覚的�
 
 adfa [@GuideBook, pp]
 
-あいうえお[^1]
-
-[^1]: あいうえおあ
 
 # 修論$\cdot$卒論クラスファイルの利用方法
 
