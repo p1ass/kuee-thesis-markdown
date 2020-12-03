@@ -1,0 +1,24 @@
+name: Build and Deploy
+
+on:
+  push:
+    # branches: [master]
+
+jobs:
+  diff:
+    runs-on: ubuntu-20.04
+    container:
+      image: plass/mdtopdf:latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v2
+      - name: Generate diff
+        run: |
+          scripts/diff.sh thesis.tex
+      - name: Commit
+        run: |
+          git config --local user.email "github_actions@example.com"
+          git config --local user.name "GitHub Actions"
+          git add .
+          git commit -m "generate diff [skip ci]"
+          git push origin ${GITHUB_REF##*/}
