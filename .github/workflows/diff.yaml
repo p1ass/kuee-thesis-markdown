@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Check out
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
       - name: Generate diff
         run: |
           scripts/diff.sh thesis.tex
