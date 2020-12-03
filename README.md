@@ -26,6 +26,12 @@ scripts/topdf.sh thesis.md
 scripts/w-topdf.sh thesis.md
 ```
 
+## 一つ前のcommitとの差分をpdfで出力する
+
+```shell script
+scripts/generate-diff.sh thesis.tex
+```
+
 ## 注意
 
 VS CodeやGitHubのプレビューでは日本語が表示されません。
