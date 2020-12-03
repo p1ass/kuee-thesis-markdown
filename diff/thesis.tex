@@ -1,7 +1,7 @@
 \documentclass[
 %DIF LATEXDIFF DIFFERENCE FILE
-%DIF DEL /tmp/NA76orWatI/latexdiff-vc-HEAD/thesis.tex   Wed Dec  2 15:48:22 2020
-%DIF ADD thesis.tex                                     Thu Dec  3 08:29:26 2020
+%DIF DEL /tmp/uGyKiD4UWI/latexdiff-vc-HEAD~1/thesis.tex   Thu Dec  3 08:39:52 2020
+%DIF ADD thesis.tex                                       Thu Dec  3 08:46:31 2020
   sotsuron]{kuee}
 
 
@@ -51,11 +51,7 @@
 % ここまで
 
 
-%DIF 51c51
-%DIF < \title{LaTeX を用いた修論$\cdot$卒論の執筆}
-%DIF -------
-\title{LaTeX2 を用いた修論$\cdot$卒論の執筆} %DIF > 
-%DIF -------
+\title{LaTeX を用いた修論$\cdot$卒論の執筆}
 \etitle{Usage of The LaTeX Style File for KUEE}
 \author{岸 直輝}
 \eauthor{Jiro Denki}
@@ -179,11 +175,20 @@
 修論\(\cdot\)卒論の正確なフォーマットの指定は，事務室から配布される手引
 を参照してください．
 
-\cite{GuideBook}
+\DIFaddbegin \DIFadd{これはdiffのexampleのための文章です。 scripts/generate-diff.sh
+thesis.tex を実行することで、diffが視覚的に分かるpdfを作成できます。
+}
+
+\DIFaddend \cite{GuideBook}
 
 adfa (晴彦 and 裕介 2017, pp)
+\DIFdelbegin %DIFDELCMD < 
 
-あいうえお\footnote{あいうえおあ}
+%DIFDELCMD < %%%
+\DIFdel{あいうえお}\footnote{\DIFdel{あいうえおあ}}
+%DIFAUXCMD
+\addtocounter{footnote}{-1}%DIFAUXCMD
+\DIFdelend 
 
 \hypertarget{ux4feeux8ad6cdotux5352ux8ad6ux30afux30e9ux30b9ux30d5ux30a1ux30a4ux30ebux306eux5229ux7528ux65b9ux6cd5}{%
 \chapter{\texorpdfstring{修論\(\cdot\)卒論クラスファイルの利用方法}{修論\textbackslash cdot卒論クラスファイルの利用方法}}\label{ux4feeux8ad6cdotux5352ux8ad6ux30afux30e9ux30b9ux30d5ux30a1ux30a4ux30ebux306eux5229ux7528ux65b9ux6cd5}}
