@@ -27,6 +27,8 @@ bibliography:
 修論$\cdot$卒論の正確なフォーマットの指定は，事務室から配布される手引
 を参照してください．
 
+これはdiffのexampleのための文章です。
+scripts/generate-diff.sh thesis.tex を実行することで、diffが視覚的に分かるpdfを作成できます。
 
 \cite{GuideBook}
 
