@@ -34,9 +34,6 @@ bibliography:
 
 adfa [@GuideBook, pp]
 
-あいうえお[^1]
-
-[^1]: あいうえおあ
 
 # 修論$\cdot$卒論クラスファイルの利用方法
 
