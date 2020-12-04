@@ -25,6 +25,13 @@ scripts/topdf.sh thesis.md
 ```shell script
 scripts/w-topdf.sh thesis.md
 ```
+
+## 一つ前のcommitとの差分をpdfで出力する
+
+```shell script
+scripts/generate-diff.sh thesis.tex
+```
+
 ## 注意
 Markdown の詳細などはフォーク元である [p1ass/kuee-thesis-markdown](https://github.com/p1ass/kuee-thesis-markdown) を参考にしてください。
 
