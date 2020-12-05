@@ -8,7 +8,7 @@ jobs:
   diff:
     runs-on: ubuntu-20.04
     container:
-      image: plass/mdtopdf:latest
+      image: plass/mdtopdf:include-fonts
     steps:
       - name: Check out
         uses: actions/checkout@v2

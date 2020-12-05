@@ -1,2 +1,2 @@
 readonly filename=$1
-docker run -it --rm -v "`pwd`":/workdir  plass/mdtopdf /bin/sh -c "./scripts/w-mdtoaizu.sh ${filename}"
+docker run -it --rm -v "`pwd`":/workdir  plass/mdtopdf:include-fonts /bin/sh -c "./scripts/w-mdtoaizu.sh ${filename}"

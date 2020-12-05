@@ -11,7 +11,7 @@
 1. 必要なDockerイメージをダウンロードする
 
 ```shell script
-docker pull plass/mdtopdf:latest
+docker pull plass/mdtopdf:include-font
 ```
 
 2. 実行
@@ -40,3 +40,6 @@ Markdown の詳細などはフォーク元である [p1ass/kuee-thesis-markdown]
 - [卒論ファイルの指針](https://web-int.u-aizu.ac.jp/official/students/sad/stsa14_j.html) で指定している、 `U-AizuGT` という文章フォーマットを `/usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls` からダウンロードしています。
 - `bibliographystyle` は [`ieicetr`](https://www.ieice.org/ftp/) を採用しました。
 - [template.tex](/template.tex) は [Aizu-Graduation-Thesis-Template](https://github.com/v97ug/Aizu-Graduation-Thesis-Template) を参考にしました。
+
+## Spetial Thanks
+@p1ass くんありがとう！
