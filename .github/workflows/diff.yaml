@@ -23,7 +23,7 @@ jobs:
           source: "test.txt"
           # source: "/usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls"
           target: ""
-          strip_components: 6
+          # strip_components: 6
       - name: Generate diff
         run: |
           scripts/diff.sh thesis.tex
