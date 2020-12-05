@@ -21,16 +21,18 @@ jobs:
           name: fetch_dc_rsa
           known_hosts: ${{ secrets.HOST_NAME }}
       - name: Fetch document class file
-        uses: appleboy/scp-action@master
-        with: 
-          host: sshgate.u-aizu.ac.jp
-          username: s1250117
-          key: ${{ secrets.SSH_KEY }}
-          key_path: /github/home/.ssh/fetch_dc_rsa
-          source: "image.png"
-          # source: "/usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls"
-          target: "tests"
-          strip_components: 6
+        run: |
+          scripts/fetch-dc.sh s1250117
+        # uses: appleboy/scp-action@master
+        # with: 
+        #   host: sshgate.u-aizu.ac.jp
+        #   username: s1250117
+        #   key: ${{ secrets.SSH_KEY }}
+        #   key_path: /github/home/.ssh/fetch_dc_rsa
+        #   source: "image.png"
+        #   # source: "/usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls"
+        #   target: "tests"
+        #   strip_components: 6
       - name: Generate diff
         run: |
           scripts/diff.sh thesis.tex
