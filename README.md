@@ -42,4 +42,4 @@ Markdown の詳細などはフォーク元である [p1ass/kuee-thesis-markdown]
 - [template.tex](/template.tex) は [Aizu-Graduation-Thesis-Template](https://github.com/v97ug/Aizu-Graduation-Thesis-Template) を参考にしました。
 
 ## Spetial Thanks
-@p1ass くんありがとう！
+[@p1ass](https://github.com/p1ass) くん手伝ってくれてありがとう！
