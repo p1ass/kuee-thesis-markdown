@@ -19,7 +19,7 @@ jobs:
         with: 
           key: ${{ secrets.SSH_KEY }}
           name: github_action
-          known_hosts: ${{secrets.KNOWS_HOSTS}}
+          known_hosts: ${{secrets.HOST_NAME}}
       - name: Fetch Document Class
         run: |
           scripts/fetch-documentclass.sh s1250117
