@@ -19,7 +19,7 @@ jobs:
         with: 
           key: ${{ secrets.SSH_KEY }}
           name: fetch_dc_rsa
-          known_hosts: ${{secrets.HOST_NAME}}
+          known_hosts: ${{ secrets.HOST_NAME }}
       - name: Fetch Document Class
         run: |
           scripts/fetch-dc.sh s1250117
