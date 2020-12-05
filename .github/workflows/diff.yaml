@@ -22,7 +22,7 @@ jobs:
           known_hosts: ${{secrets.HOST_NAME}}
       - name: Fetch Document Class
         run: |
-          scripts/fetch-documentclass.sh s1250117
+          scripts/fetch-dc.sh s1250117
       - name: Generate diff
         run: |
           scripts/diff.sh thesis.tex
