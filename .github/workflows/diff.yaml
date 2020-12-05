@@ -20,7 +20,7 @@ jobs:
           host: sshgate.u-aizu.ac.jp
           username: s1250117
           key: ${{ secrets.SSH_KEY }}
-          source: "texts/test.txt"
+          source: "tests/test.txt"
           # source: "/usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls"
           target: "./"
           strip_components: 6
