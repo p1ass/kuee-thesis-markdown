@@ -13,8 +13,14 @@
 ```shell script
 docker pull plass/mdtopdf:include-font
 ```
+2. 必要な文章フォーマットをダウンロードする
 
-2. 実行
+```shell script
+echo "get /usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls" | sftp [学籍番号]@sshgate.u-aizu.ac.jp
+```
+
+
+3. 実行
 
 ```shell script
 scripts/topdf.sh thesis.md
