@@ -20,10 +20,10 @@ jobs:
           host: sshgate.u-aizu.ac.jp
           username: s1250117
           key: ${{ secrets.SSH_KEY }}
-          source: "test.txt"
+          source: "texts/test.txt"
           # source: "/usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls"
-          target: ""
-          # strip_components: 6
+          target: "./"
+          strip_components: 6
       - name: Generate diff
         run: |
           scripts/diff.sh thesis.tex
