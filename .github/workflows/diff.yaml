@@ -18,7 +18,7 @@ jobs:
         uses: shimataro/ssh-key-action@v2
         with:
           key: ${{ secrets.SSH_KEY }}
-          name: fetch_dc_rsa
+          # name: fetch_dc_rsa
           known_hosts: ${{ secrets.HOST_NAME }}
       - name: Fetch document class file
         uses: appleboy/scp-action@master
