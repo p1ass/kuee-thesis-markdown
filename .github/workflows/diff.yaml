@@ -14,6 +14,15 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 2
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v1
+        with: 
+          key: ${{ secrets.SSH_KEY }}
+          name: github_action
+          known_hosts: ${{secrets.KNOWS_HOSTS}}
+      - name: Fetch Document Class
+        run: |
+          scripts/fetch-documentclass.sh s1250117
       - name: Generate diff
         run: |
           scripts/diff.sh thesis.tex
