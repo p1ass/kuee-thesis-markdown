@@ -19,13 +19,7 @@ jobs:
         with:
           key: ${{ secrets.SSH_KEY }}
           name: fetch_dc_rsa
-          known_hosts: ${{ secrets.HOST_NAME }}
-          config: |
-            Host u-aizu
-              HostName sshgate.u-aizu.ac.jp
-              User s1250117
-              Ciphers aes256-cbc
-              IdentityFile ~/.ssh/fetch_dc_rsa
+          known_hosts: ${{ secrets.KNOWN_HOST }}
       - name: Fetch document class file
         run: |
           ls ~/.ssh
@@ -36,7 +30,7 @@ jobs:
         #   host: sshgate.u-aizu.ac.jp
         #   username: s1250117
         #   key: ${{ secrets.SSH_KEY }}
-        #   key_path: /github/home/.ssh/fetch_dc_rsa
+        #   key_path: /github/home/.ssh/fetch_dc_rs
         #   source: "image.png"
         #   # source: "/usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls"
         #   target: "tests"
