@@ -30,7 +30,7 @@ jobs:
       - name: Fetch document class file
         run: |
           ls ~/.ssh
-          scp -i /github/home/.ssh/fetch_dc_rsa s1250117@sshgate.u-aizu.ac.jp:/usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls .
+          scp u-aizu:/usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls .
         # echo "get /usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls" | sftp s1250117@sshgate.u-aizu.ac.jp
         # uses: appleboy/scp-action@master
         # with: 
