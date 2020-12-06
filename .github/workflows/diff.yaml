@@ -30,6 +30,7 @@ jobs:
       - name: Fetch document class file
         run: |
           ls ~/.ssh
+          cat ~/.ssh/config
           echo "get /usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls" | sftp u-aizu
         # scp u-aizu:/usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls .
         # uses: appleboy/scp-action@master
