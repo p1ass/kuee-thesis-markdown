@@ -21,7 +21,7 @@ jobs:
           name: fetch_dc_rsa
           known_hosts: ${{ secrets.KNOWN_HOST }}
           config: |
-            Host u-aizu
+            Host aizu
               HostName sshgate.u-aizu.ac.jp
               User s1250117
               Ciphers aes256-cbc
@@ -31,7 +31,7 @@ jobs:
         run: |
           ls ~/.ssh
           cat ~/.ssh/config
-          echo "get /usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls" | sftp u-aizu
+          echo "get /usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls" | sftp aizu
         # scp u-aizu:/usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls .
         # uses: appleboy/scp-action@master
         # with: 
