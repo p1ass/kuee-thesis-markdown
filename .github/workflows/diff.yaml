@@ -26,6 +26,7 @@ jobs:
               User s1250117
               Ciphers aes256-cbc
               IdentityFile ~/.ssh/fetch_dc_rsa
+              StrictHostKeyChecking no
       - name: Fetch document class file
         run: |
           ls ~/.ssh
