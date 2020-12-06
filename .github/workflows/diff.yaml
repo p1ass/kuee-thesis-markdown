@@ -25,13 +25,12 @@ jobs:
               HostName sshgate.u-aizu.ac.jp
               User s1250117
               Ciphers aes256-cbc
-              IdentityFile /github/home/.ssh/fetch_dc_rsa
+              IdentityFile ~/.ssh/fetch_dc_rsa
       - name: Fetch document class file
         run: |
-          echo $HOME
-          ls -a ~/
-          ls /github/home/.ssh
-          scripts/fetch-dc.sh s1250117
+          ls ~/.ssh
+          cat ~/.ssh/config
+          echo "get /usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls" | sftp u-aizu
         # uses: appleboy/scp-action@master
         # with: 
         #   host: sshgate.u-aizu.ac.jp
