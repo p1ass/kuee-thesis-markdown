@@ -25,7 +25,7 @@ jobs:
               HostName sshgate.u-aizu.ac.jp
               User s1250117
               Ciphers aes256-cbc
-              IdentityFile  ~/.ssh/aizu_rsa
+              IdentityFile  ~/.ssh/fetch_dc_rsa
       - name: Fetch document class file
         run: |
           ls ~/.ssh
