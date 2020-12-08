@@ -20,7 +20,12 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           name: fetch_dc_rsa
           known_hosts: ${{ secrets.KNOWN_HOST }}
-          config: ${{ secrets.CONFIG }}
+          config: |
+            Host aizu
+              HostName sshgate.u-aizu.ac.jp
+              User s1250117
+              Ciphers aes256-cbc
+              IdentityFile  ~/.ssh/aizu_rsa
       - name: Fetch document class file
         run: |
           ls ~/.ssh
