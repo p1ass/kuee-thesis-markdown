@@ -30,7 +30,7 @@ jobs:
         run: |
           ls ~/.ssh
           cat ~/.ssh/config
-          ssh -oStrictHostKeyChecking=no aizu "pwd"
+          ssh -oStrictHostKeyChecking=no -i ~/.ssh/fetch_dc_rsa s1250117@sshgate.u-aizu.ac.jp "pwd"
         # scripts/fetch-dc.sh s1250117
         # echo "get /usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls" | sftp -i ~/.ssh/fetch_dc_rsa s1250117@sshgate.u-aizu.ac.jp
         # scp u-aizu:/usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls .
