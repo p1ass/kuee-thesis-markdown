@@ -31,6 +31,7 @@ jobs:
         run: |
           ls ~/.ssh
           cat ~/.ssh/config
+          ssh-keyscan -H sshgate.u-aizu.ac.jp >> ~/.ssh/known_hosts
           echo "get /usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls" | sftp -i ~/.ssh/fetch_dc_rsa s1250117@sshgate.u-aizu.ac.jp
         # scp u-aizu:/usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls .
         # uses: appleboy/scp-action@master
