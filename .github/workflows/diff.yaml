@@ -2,7 +2,7 @@ name: Generate diff
 
 on:
   push:
-    branches: [master, test-ci]
+    branches: [master]
 
 jobs:
   diff:
