@@ -37,12 +37,19 @@ scripts/w-topdf.sh thesis.md
 scripts/generate-diff.sh thesis.tex
 ```
 
-## Github Actions を path させたい場合
-1. リポジトリを private にする
-1. `.gitignore` から `U-AizuGT.cls` という記述を消す
-1. `U-AizuGT.cls` を add&push する
+## Github Actions の設定
 
-※文章フォーマットファイルの `U-AizuGT.cls` は再配布禁止になっているため、リポジトリにあげることができません。 必ず private リポジトリにしましょう。
+リポジトリを作ったら、 `Setting` → `Secrets` → `New repository secret` から次の2つの環境変数を設定する必要があります。
+- `STUDENT_ID` : 学籍番号
+- `SSH_KEY` : 大学環境に ssh するための秘密鍵
+<details>
+<summary>秘密鍵の設定方法</summary>
+
+  1. 学内で github actions 用の ssh キーを作り(名前は何でも大丈夫)、秘密鍵をコピー&ペーストで Secrets に登録。
+  1. 公開鍵を `~/.ssh/authorized_keys` に追記。 
+</details>
+
+※文章フォーマットファイルの `U-AizuGT.cls` は再配布禁止になっているため、リポジトリにあげることができません。
 
 ## 注意 
 Markdown の詳細などはフォーク元である [p1ass/kuee-thesis-markdown](https://github.com/p1ass/kuee-thesis-markdown) を参考にしてください。
