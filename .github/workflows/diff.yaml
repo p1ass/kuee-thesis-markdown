@@ -21,9 +21,10 @@ jobs:
           echo "$SECRET_KEY" > secret_key
           chmod 600 secret_key
           echo "get /usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls" | sftp -i secret_key -oStrictHostKeyChecking=no s1250117@sshgate.u-aizu.ac.jp
-      - name: Replace "JT1" to "JT2"
+      - name: Replace "J*1" to "J*2"
         run: |
           sed -i -e "s/JT1/JT2/g" U-AizuGT.cls
+          sed -i -e "s/JY1/JY2/g" U-AizuGT.cls
       - name: Generate diff
         run: |
           scripts/diff.sh thesis.tex
