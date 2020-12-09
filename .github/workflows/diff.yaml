@@ -16,11 +16,13 @@ jobs:
           fetch-depth: 2
       - name: Setup secret key
         env:
-          SECRET_KEY: ${{ secrets.TEST_KEY }}
+          SECRET_KEY: ${{ secrets.SSH_KEY }}
         run: |
           echo "$SECRET_KEY" > secret_key
           chmod 600 secret_key
-          echo "get /usr/local/texlive/texmf-local/tex/aizu/U-AizuGT.cls" | sftp -i secret_key -oStrictHostKeyChecking=no s1250117@sshgate.u-aizu.ac.jp
+      - name: Fetch document class file
+        run: |
+          scripts/fetch-dc.sh ${{ secrets.STUDENT_ID }}
       - name: Replace "J*1" to "J*2"
         run: |
           sed -i -e "s/JT1/JT2/g" U-AizuGT.cls
